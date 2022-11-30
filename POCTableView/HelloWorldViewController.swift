@@ -21,7 +21,7 @@ class HelloWorldViewController: UIViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = .systemRed
-        label.text = model!.nome + model!.secao[0].conteudo
+        label.text = model!.nome
         print(model?.nome ?? "Error", "nova controller")
         labelContraints()
     }

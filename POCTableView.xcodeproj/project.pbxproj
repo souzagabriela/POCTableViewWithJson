@@ -12,6 +12,7 @@
 		5337034C29362983006775BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337034B29362983006775BD /* ViewController.swift */; };
 		5337035129362983006775BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5337035029362983006775BD /* Assets.xcassets */; };
 		5337035429362983006775BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5337035229362983006775BD /* LaunchScreen.storyboard */; };
+		535FABE829378DF400034314 /* POCSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535FABE729378DF400034314 /* POCSearchBar.swift */; };
 		5368772A2936C45700B7C306 /* JsonTeste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536877292936C45700B7C306 /* JsonTeste.swift */; };
 		5368772E2936C4E900B7C306 /* AfroditeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368772D2936C4E900B7C306 /* AfroditeModel.swift */; };
 		536877302936CCF900B7C306 /* Afrodite.json in Resources */ = {isa = PBXBuildFile; fileRef = 5368772F2936CCF900B7C306 /* Afrodite.json */; };
@@ -26,6 +27,7 @@
 		5337035029362983006775BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5337035329362983006775BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5337035529362983006775BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		535FABE729378DF400034314 /* POCSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCSearchBar.swift; sourceTree = "<group>"; };
 		536877292936C45700B7C306 /* JsonTeste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonTeste.swift; sourceTree = "<group>"; };
 		5368772D2936C4E900B7C306 /* AfroditeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfroditeModel.swift; sourceTree = "<group>"; };
 		5368772F2936CCF900B7C306 /* Afrodite.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Afrodite.json; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		5337034629362983006775BD /* POCTableView */ = {
 			isa = PBXGroup;
 			children = (
+				535FABE629378DDD00034314 /* POCSearchBar */,
 				5368772B2936C45D00B7C306 /* JsonAfrodite */,
 				5337034729362983006775BD /* AppDelegate.swift */,
 				5337034929362983006775BD /* SceneDelegate.swift */,
@@ -72,6 +75,14 @@
 				5337035529362983006775BD /* Info.plist */,
 			);
 			path = POCTableView;
+			sourceTree = "<group>";
+		};
+		535FABE629378DDD00034314 /* POCSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				535FABE729378DF400034314 /* POCSearchBar.swift */,
+			);
+			path = POCSearchBar;
 			sourceTree = "<group>";
 		};
 		5368772B2936C45D00B7C306 /* JsonAfrodite */ = {
@@ -155,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535FABE829378DF400034314 /* POCSearchBar.swift in Sources */,
 				5337034C29362983006775BD /* ViewController.swift in Sources */,
 				5368772A2936C45700B7C306 /* JsonTeste.swift in Sources */,
 				98548DD829377AB0007E4130 /* HelloWorldViewController.swift in Sources */,
