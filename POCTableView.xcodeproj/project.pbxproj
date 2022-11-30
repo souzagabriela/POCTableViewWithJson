@@ -15,6 +15,7 @@
 		5368772A2936C45700B7C306 /* JsonTeste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536877292936C45700B7C306 /* JsonTeste.swift */; };
 		5368772E2936C4E900B7C306 /* AfroditeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368772D2936C4E900B7C306 /* AfroditeModel.swift */; };
 		536877302936CCF900B7C306 /* Afrodite.json in Resources */ = {isa = PBXBuildFile; fileRef = 5368772F2936CCF900B7C306 /* Afrodite.json */; };
+		98548DD829377AB0007E4130 /* HelloWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98548DD729377AB0007E4130 /* HelloWorldViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		536877292936C45700B7C306 /* JsonTeste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonTeste.swift; sourceTree = "<group>"; };
 		5368772D2936C4E900B7C306 /* AfroditeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfroditeModel.swift; sourceTree = "<group>"; };
 		5368772F2936CCF900B7C306 /* Afrodite.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Afrodite.json; sourceTree = "<group>"; };
+		98548DD729377AB0007E4130 /* HelloWorldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				5337034729362983006775BD /* AppDelegate.swift */,
 				5337034929362983006775BD /* SceneDelegate.swift */,
 				5337034B29362983006775BD /* ViewController.swift */,
+				98548DD729377AB0007E4130 /* HelloWorldViewController.swift */,
 				5337035029362983006775BD /* Assets.xcassets */,
 				5337035229362983006775BD /* LaunchScreen.storyboard */,
 				5337035529362983006775BD /* Info.plist */,
@@ -154,6 +157,7 @@
 			files = (
 				5337034C29362983006775BD /* ViewController.swift in Sources */,
 				5368772A2936C45700B7C306 /* JsonTeste.swift in Sources */,
+				98548DD829377AB0007E4130 /* HelloWorldViewController.swift in Sources */,
 				5337034829362983006775BD /* AppDelegate.swift in Sources */,
 				5337034A29362983006775BD /* SceneDelegate.swift in Sources */,
 				5368772E2936C4E900B7C306 /* AfroditeModel.swift in Sources */,

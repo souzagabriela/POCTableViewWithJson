@@ -11,7 +11,7 @@ class JsonTeste {
 
     static let instance = JsonTeste()
 
-    func loadjson() -> [Afrodite]? {
+    func loadjson() -> [Afrodite] {
         if let url = Bundle.main.url(forResource: "Afrodite", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
@@ -23,7 +23,7 @@ class JsonTeste {
                 print(error)
             }
         }
-        return nil
+        return [Afrodite(id: IDReceita(oid: ""), nome: "", secao: [Secao(nome: "", conteudo: [""])])]
     }
 
     private init() {}

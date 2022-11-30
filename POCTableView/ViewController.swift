@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let tableView = UITableView()
 
-    var teste = JsonTeste.instance.loadjson()
+    var receitas = JsonTeste.instance.loadjson()
 //    teste = teste?.filter{$0 == "Chocolate"}
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,14 +18,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.delegate = self
         tableView.dataSource = self
-//        print(teste?[1].nome.contains("Chocolate"))
-        print(teste?[0].secao[0].conteudo.contains("50 g farinha de milho fina"))
-        if ((teste?[0].nome.contains("Chocolate")) == true) {
-            print("deu bom")
-        } else {
-            print("deu ruim")
+        
+        func filtrarReceitas(with palavras: [String])->[Afrodite] {
+            
+            var receitasNomes: [Afrodite] = []
+            
+            for receita in self.receitas {
+                for conteudo in receita.secao[0].conteudo {
+                    for palavra in palavras {
+                        if conteudo.contains(palavra) {
+                            receitasNomes.append(receita)
+                        }
+                    }
+                }
+            }
+            return receitasNomes
         }
         
+        self.receitas = filtrarReceitas(with: ["cuscuz"])
+        tableView.reloadData()
     }
 
     override func viewDidLayoutSubviews() {
@@ -35,15 +46,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return teste!.count
+        print(receitas.count)
+        return receitas.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = teste?[indexPath.row].nome
+        cell.textLabel?.text = receitas[indexPath.row].nome
         cell.textLabel?.numberOfLines = 0
 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = HelloWorldViewController()
+        vc.model = receitas[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
     }
 
 }
